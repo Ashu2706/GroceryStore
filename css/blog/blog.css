@@ -1,0 +1,75 @@
+.blogs .blog-card-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .blog-card-wrapper .blog-card {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.blogs .blog-card-wrapper .blog-card:hover .image-wrapper img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.blogs .blog-card-wrapper .blog-card .image-wrapper {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.blogs .blog-card-wrapper .blog-card .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content {
+  padding: 2rem 1.5rem;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content .icons {
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content .icons a {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content .icons a:hover {
+  color: #4ec358;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content .icons a i {
+  color: #4ec358;
+  padding-right: 0.5rem;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content h3 {
+  font-size: 2.2rem;
+  color: #222;
+}
+
+.blogs .blog-card-wrapper .blog-card .blog-content p {
+  font-size: 1.4rem;
+  color: #666;
+  line-height: 2;
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=blog.css.map */

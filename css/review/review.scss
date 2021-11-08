@@ -1,0 +1,59 @@
+@import "../variables";
+
+.info-wrapper {
+    @include grid(25rem);
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        img {
+            height: 7rem;
+        }
+        .info-content {
+            h3 {
+                font-size: 2rem;
+                color: $black;
+                margin-bottom: 0.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+                color: $light-color;
+            }
+        }
+    }
+}
+
+.review-wrapper {
+    @include grid(30rem);
+    .review-card {
+        padding: 2rem;
+        border: $border;
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            img {
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+            }
+            .user-details {
+                h3 {
+                    font-size: 2rem;
+                    color: $black;
+                }
+                span {
+                    font-size: 1.4rem;
+                    color: $primary;
+                }
+            }
+        }
+        p {
+            font-size: 1.4rem;
+            color: $light-color;
+            line-height: 2;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about .image-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .image-wrapper img {
+  width: 100%;
+}
+
+.about .about-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about h3 {
+  font-size: 3rem;
+  color: black;
+}
+
+.about p {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 3.2rem;
+  padding: 1rem 0;
+}
+
+.gallery .card-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery .card-wrapper .card {
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.gallery .card-wrapper .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .card-wrapper .card:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.gallery .card-wrapper .card:hover .icons {
+  bottom: 0;
+}
+
+.gallery .card-wrapper .card .icons {
+  position: absolute;
+  bottom: -6rem;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.gallery .card-wrapper .card .icons a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 1.5rem;
+}
+
+.gallery .card-wrapper .card .icons a:hover {
+  color: #4ec358;
+}
+/*# sourceMappingURL=about.css.map */
